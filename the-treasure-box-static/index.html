@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Treasure Box · Pre-owned Luxury Bags</title>
+<meta name="description" content="Authenticated pre-owned luxury bags — Chanel, Hermès, Louis Vuitton and more.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+
+<div class="announce"><p id="announce-text">◆ &nbsp;Complimentary delivery over $500 · Authenticated pre-owned luxury&nbsp; ◆</p></div>
+
+<header class="nav glass">
+  <div class="nav__inner container">
+    <button class="nav__burger" id="burger" aria-label="Menu"><span></span><span></span><span></span></button>
+    <a class="nav__brand" onclick="go('home')">
+      <svg class="nav__crest" viewBox="0 0 40 40" fill="none"><path d="M20 3 L34 20 L20 37 L6 20 Z" stroke="#a9e8cd" stroke-width="1.5"/><path d="M20 11 L27 20 L20 29 L13 20 Z" fill="#a9e8cd" opacity=".85"/></svg>
+      <span class="nav__word">The Treasure Box</span>
+    </a>
+    <nav class="nav__links" id="navlinks">
+      <button class="nav__link" onclick="go('home')">Home</button>
+      <button class="nav__link" onclick="go('shop')">Shop</button>
+      <button class="nav__link" onclick="go('about')">Our House</button>
+      <button class="nav__link" onclick="go('admin')">Admin</button>
+    </nav>
+    <div class="nav__actions">
+      <select class="nav__sel" id="currency" onchange="setCurrency(this.value)" aria-label="Currency"></select>
+      <button class="nav__icon" onclick="go('shop');setTimeout(()=>document.getElementById('search')?.focus(),100)" aria-label="Search">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg></button>
+      <button class="nav__icon" id="accountBtn" aria-label="Account">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="8" r="4"/><path d="M4 20c1.8-3.4 4.6-5 8-5s6.2 1.6 8 5"/></svg></button>
+      <button class="nav__icon" onclick="go('cart')" aria-label="Cart">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M6 8h12l-1.2 11H7.2L6 8Z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg>
+        <span class="nav__badge is-empty" id="cartBadge">0</span></button>
+    </div>
+  </div>
+</header>
+
+<main id="app"></main>
+
+<footer class="footer">
+  <div class="container footer__main">
+    <div>
+      <svg class="footer__crest" viewBox="0 0 40 40" fill="none"><path d="M20 3 L34 20 L20 37 L6 20 Z" stroke="#a9e8cd" stroke-width="1.5"/><path d="M20 11 L27 20 L20 29 L13 20 Z" fill="#a9e8cd" opacity=".85"/></svg>
+      <p class="footer__word">The Treasure Box</p>
+      <p class="footer__tag">Pre-loved treasures, authenticated</p>
+    </div>
+    <nav class="footer__col"><h3>Boutique</h3>
+      <button onclick="go('shop')">All pieces</button>
+      <button onclick="go('shop')">Private sale</button>
+      <button onclick="go('about')">Our story</button></nav>
+    <nav class="footer__col"><h3>Account</h3>
+      <button id="footerAccount">Sign in</button>
+      <button onclick="go('admin')">Admin console</button></nav>
+  </div>
+  <div class="footer__legal container"><p>© 2026 The Treasure Box · A demo boutique. Everything you post is saved in this browser only.</p></div>
+</footer>
+
+<div class="toasts" id="toasts"></div>
+<div class="modal" id="modal"><div class="glass modal__panel" id="modalPanel"></div></div>
+
+<script src="app.js"></script>
+</body>
+</html>
