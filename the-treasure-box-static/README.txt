@@ -22,12 +22,6 @@ HOW TO USE IT
    • Any web hosting's public folder
    You get a real public URL in seconds, and it works on phones too.
 
-ADMIN LOGIN
------------
-Click "Admin" in the top menu.
-   E-mail:    csbizcircle18@gmail.com
-   Password:  cstol89*
-
 From the admin console you can:
    • Post a bag (name, brand, condition, price, stock, photos, description)
    • Edit or delete listings
